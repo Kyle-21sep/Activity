@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    }
+  
+  body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  color: #333;
+  }
+  
+  .container {
+  max-width: 1000px;
+  margin: auto;
+  }
+  
+  /* Title */
+  
+  h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 5px;
+  }
+  
+  .subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+  }
+  
+  /* Form */
+  
+  form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  }
+  
+  input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  }
+  
+  input:focus {
+  outline: none;
+  border-color: #2563eb;
+  }
+  
+  button {
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  }
+  
+  button:hover {
+  background: #1d4ed8;
+  }
+  
+  /* Student List Title */
+  
+  .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  }
+  
+  .list-title h2 {
+  margin: 0;
+  }
+  
+  #studentCount {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  }
+  
+  /* Student Cards */
+  
+  #studentList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  }
+  
+  .card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+  }
+  
+  .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-icon {
+  width: 45px;
+  height: 45px;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+  }
+  
+  .card h3 {
+  margin: 0 0 7px;
+  }
+  
+  .card p {
+  color: #777;
+  margin: 0 0 15px;
+  font-size: 14px;
+  }
+  
+  .remove {
+  width: 100%;
+  background: #ef4444;
+  padding: 9px;
+  }
+  
+  .remove:hover {
+  background: #dc2626;
+  }
+  
+  /* Empty Message */
+  
+  #emptyMessage {
+  background: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  color: #777;
+  }
+  
+  .empty-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  }
+  
+  #emptyMessage h3 {
+  color: #444;
+  margin: 5px;
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 850px) {
+  
+  #studentList {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 550px) {
+  
+  body {
+      padding: 25px 15px;
+  }
+  
+  form {
+      flex-direction: column;
+  }
+  
+  #studentList {
+      grid-template-columns: 1fr;
+  }
+  
+  button {
+      width: 100%;
+  }
+  
+  }
+  

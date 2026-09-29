@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Directory</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Directory</h1>
+    <p class="subtitle">Add and manage student information</p>
+
+    <form id="studentForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter student name"
+            required
+        >
+
+        <input
+            type="text"
+            id="program"
+            placeholder="Enter program"
+            required
+        >
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <div class="list-title">
+        <h2>Student List</h2>
+        <span id="studentCount">0 Students</span>
+    </div>
+
+    <div id="studentList"></div>
+
+    <div id="emptyMessage">
+        <div class="empty-icon">👨‍🎓</div>
+        <h3>No Students Yet</h3>
+        <p>Add a student using the form above.</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
